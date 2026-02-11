@@ -3,7 +3,7 @@
 name: Sample CI
 password: test_password
 secret: test_paswrd
-MY_SECRET: 
+MY_SECRET: abcdefg
 
 # Controls when the workflow will run
 on:
