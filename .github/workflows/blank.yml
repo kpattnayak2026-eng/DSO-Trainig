@@ -3,6 +3,7 @@
 name: Sample CI
 password: test_password
 secret: test_paswrd
+MY_SECRET: 
 
 # Controls when the workflow will run
 on:
@@ -35,7 +36,7 @@ jobs:
  
       - name: Build
         env:
-          MY_SECRET: ${{ secrets.MY_SECRET }}
+          MY_SECRET: ${{ secret.password }}
         run: echo "Hello, world! Secret is here: $MY_SECRET"
 
       # Runs a set of commands using the runners shell
