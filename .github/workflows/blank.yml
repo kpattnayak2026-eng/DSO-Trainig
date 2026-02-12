@@ -12,7 +12,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
  
-      # ❌ BAD: This exposes the API key directly in the workflow
+      # ❌ BAD: This exposes the API key directly in the workflow. 
       - name: Set Insecure Secrets (VULNERABLE)
         run: |
           echo "API_KEY=12345-UNSAFE-API-KEY" >> $GITHUB_ENV
